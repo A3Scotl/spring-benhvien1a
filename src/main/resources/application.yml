@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USN}
+    password: ${DB_PWD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+
+#zalo:
+#  oa:
+#    access-token: your_zalo_access_token
+#  user-id: your_zalo_user_id
+#cloudinary:
+#  cloud_name: ${CLOUD_NAME}
+#  api_key: ${CLOUD_API_KEY}
+#  api_secret: ${CLOUD_API_SECRET}
